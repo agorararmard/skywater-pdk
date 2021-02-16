@@ -3,13 +3,13 @@ name: Update Submodules and Submit a PR
 on:
   push:
     branches:
-      - master
+      - another-test
     schedule:
       - cron:  '0 0 * * *'
 
 jobs:
   createPullRequest:
-    if: contains(github.ref, 'master')
+    if: contains(github.ref, 'another-test')
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
