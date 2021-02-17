@@ -1,6 +1,7 @@
 name: Update Submodules and Submit a PR
 
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
